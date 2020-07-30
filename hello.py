@@ -22,6 +22,5 @@ for movie in movies:
     # movie 안에 a 가 있으면,
     a_tag = movie.select_one('td.title > div > a')
     if a_tag is not None:
-        # a의 text를 찍어본다.
         print(movie.select_one('td.ac > img')['alt'])
 
