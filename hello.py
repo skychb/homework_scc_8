@@ -19,7 +19,7 @@ movies = soup.select('#old_content > table > tbody > tr')
 
 # movies (tr들) 의 반복문을 돌리기
 for movie in movies:
-    # movie 안에 a 가 있으면,
+    # movie 안에 a 가 있으면, 냔냐뇬뇨
     a_tag = movie.select_one('td.title > div > a')
     if a_tag is not None:
         print(movie.select_one('td.ac > img')['alt'])
